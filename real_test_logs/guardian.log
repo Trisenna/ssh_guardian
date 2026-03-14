@@ -1,0 +1,12 @@
+[2026-03-14 22:14:12] ========================================
+[2026-03-14 22:14:12] ssh_guardian started (pid=2757094 uid=0)
+[2026-03-14 22:14:12]   interval=3 timeout=8 fail_threshold=2 cooldown=60
+[2026-03-14 22:14:12]   kill_count=1 min_rss_mb=100 recovery_wait=5 dry_run=0
+[2026-03-14 22:14:12]   allow=[python3,python]
+[2026-03-14 22:14:12]   exclude=[bash,zsh,sh,fish,tmux,screen,sshd,ssh,login,jupyter-lab,jupyter-notebook]
+[2026-03-14 22:14:12]   log_file=/root/ssh_guardian/real_test_logs/guardian.log
+[2026-03-14 22:14:12]   shm_log=/dev/shm/ssh_guardian_realtest.log
+[2026-03-14 22:14:12] ========================================
+[2026-03-14 22:14:45] SSH_CHECK: FAILED (1/2) | MemAvail=18MB SwapFree=0MB IoSome10=75.8 IoFull10=12.9
+[2026-03-14 22:15:29] SSH_CHECK: FAILED (2/2) | MemAvail=16MB SwapFree=0MB IoSome10=99.7 IoFull10=0.4
+[2026-03-14 22:15:50] TRIGGER: 2 consecutive SSH failures, entering emergency mode
