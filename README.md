@@ -112,7 +112,7 @@ cat ~/.ssh/id_ed25519.pub >> ~/.ssh/authorized_keys
 chmod 700 ~/.ssh
 chmod 600 ~/.ssh/authorized_keys
 ```
-
+注意如果前面的出现了权限提示，ssh无法修改，可以直接运行下面的检测，只要有公钥就行
 ```bash
 # 验证（不应该要求输密码）
 ssh -o BatchMode=yes -o StrictHostKeyChecking=no localhost /bin/true
