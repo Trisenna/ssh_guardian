@@ -310,7 +310,7 @@ done
 
 检测相关：
   --interval N        每隔几秒检测一次 SSH           默认: 5
-  --timeout N         单次检测超时秒数               默认: 8
+  --timeout N         单次检测超时秒数               默认: 8(time ssh -o BatchMode=yes localhost /bin/true查看日常链接需要的时间，大概4倍即可)
   --fail-threshold N  连续失败几次才动手             默认: 3
 
 清杀相关：
